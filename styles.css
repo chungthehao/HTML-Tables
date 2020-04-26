@@ -5,3 +5,15 @@ body {
   height: 100vh;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.item {
+  background-color: yellow;
+}
+
+.retail {
+  background-color: red;
+}
+
+.case {
+  background-color: blue;
+}
