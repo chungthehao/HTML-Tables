@@ -63,6 +63,9 @@ caption {
     background-color: azure;
   }
 
+  /* 
+    https://adrianroselli.com/2017/11/a-responsive-accessible-table.html
+  */
   table,
   tr,
   td {
@@ -94,5 +97,19 @@ caption {
   }
   td:nth-child(7)::before {
     content: "12+ Case Discount: ";
+  }
+
+  table {
+    border: none;
+  }
+
+  tbody,
+  tfoot {
+    border: 1px solid #3f2b21;
+  }
+
+  tfoot td:nth-child(1)::before,
+  tfoot td:nth-child(2)::before {
+    content: "";
   }
 }
