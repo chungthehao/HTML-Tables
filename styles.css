@@ -36,6 +36,10 @@ tfoot tr:last-child td {
   border-bottom: none;
 }
 
+tbody tr:nth-child(even) {
+  background-color: rgba(204, 174, 81, 0.2);
+}
+
 table {
   border: 1px solid #3f2b21;
   border-collapse: collapse;
