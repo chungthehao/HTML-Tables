@@ -52,3 +52,7 @@ caption {
   font-size: 2rem;
   font-weight: bold;
 }
+
+.table-scroll {
+  overflow: auto;
+}
