@@ -41,3 +41,72 @@ th {
   padding: 0.5rem;
   border: 1px solid black;
 }
+
+.table-scroll {
+  overflow: auto;
+}
+
+@media (max-width: 500px) {
+  body {
+    min-height: 150vh;
+    background-color: azure;
+  }
+
+  table,
+  tr,
+  td {
+    display: block;
+  }
+
+  th {
+    display: none;
+  }
+
+  table {
+    border: none;
+  }
+
+  td:nth-child(1)::before {
+    content: "Day: ";
+  }
+  td:nth-child(2)::before {
+    content: "Date: ";
+  }
+  td:nth-child(3)::before {
+    content: "Regular Hours: ";
+  }
+  td:nth-child(4)::before {
+    content: "Overtime Hours: ";
+  }
+  td:nth-child(5)::before {
+    content: "Sick Hours: ";
+  }
+  td:nth-child(6)::before {
+    content: "Vacation Hours: ";
+  }
+  td:nth-child(7)::before {
+    content: "Total: ";
+  }
+
+  tfoot tr:nth-child(1) td:first-child::before {
+    content: "Total Hours";
+  }
+
+  tfoot tr:nth-child(2) td:first-child::before {
+    content: "Hourly Rate";
+  }
+  tfoot tr:nth-child(2) td:last-child {
+    display: none;
+  }
+
+  tfoot tr:nth-child(3) td:first-child::before {
+    content: "Total Pay";
+  }
+
+  tfoot tr td:first-child {
+    color: white;
+    background-color: #ccae51;
+    font-weight: bold;
+    border: 1px solid #3f2b21;
+  }
+}
