@@ -56,3 +56,43 @@ caption {
 .table-scroll {
   overflow: auto;
 }
+
+@media (max-width: 1200px) {
+  body {
+    height: 150vh;
+    background-color: azure;
+  }
+
+  table,
+  tr,
+  td {
+    display: block;
+  }
+
+  thead,
+  th {
+    display: none;
+  }
+
+  td:nth-child(1)::before {
+    content: "Item #: ";
+  }
+  td:nth-child(2)::before {
+    content: "Product or Service: ";
+  }
+  td:nth-child(3)::before {
+    content: "Price (ea): ";
+  }
+  td:nth-child(4)::before {
+    content: "Retail Price (Case): ";
+  }
+  td:nth-child(5)::before {
+    content: "Case Discount: ";
+  }
+  td:nth-child(6)::before {
+    content: "12+ Case Price: ";
+  }
+  td:nth-child(7)::before {
+    content: "12+ Case Discount: ";
+  }
+}
