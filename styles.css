@@ -20,3 +20,11 @@ table {
   border: 1px solid #3f2b21;
   border-collapse: collapse;
 }
+
+caption {
+  color: #ccae51;
+  text-align: left;
+  padding: 0.5rem 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
