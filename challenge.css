@@ -55,7 +55,7 @@ th {
   table,
   tr,
   td {
-    display: block;
+    display: block; /* Để nó bị vỡ cấu trúc bảng và stack lên nhau */
   }
 
   th {
@@ -66,6 +66,7 @@ th {
     border: none;
   }
 
+  /* Thường những cái này sẽ dùng JavaScript để thao tác nội dung */
   td:nth-child(1)::before {
     content: "Day: ";
   }
